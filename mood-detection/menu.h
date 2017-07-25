@@ -5,6 +5,8 @@
 #include <iostream>
 #include <conio.h> //_getch()
 #include <Windows.h> //Sleep()
+#include <thread>
+#include <atomic>
 #include "ddconsole.h"
 
 //function list

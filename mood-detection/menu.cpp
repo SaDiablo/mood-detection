@@ -1,5 +1,6 @@
 #include "menu.h"
-#include "ddconsole.h"
+#include "detection.h"
+
 
 using namespace std;
 
@@ -83,13 +84,9 @@ void menu()
 
 void menu_1() //Detection
 {
-	do
-	{
-		cout << "cos" << endl;
-		Sleep(1000);
-
-	} while (!_kbhit());
-	_getch();
+	thread logic (logic);
+	logic.join();
+	
 	cout << "Stop detection" << endl;
 	cout << "" << endl;
 	menu();
